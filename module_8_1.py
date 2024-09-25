@@ -1,18 +1,21 @@
+# a=1
+# b= 2
+# if int(a) and str(b):
+#     try:
+#             a + b
+#     except TypeError:
+#         print("1234"+ "mdkdkdl")
+# else:
+#     print(a+b)
+
 def add_everything_up(a,b):
     try:
+        a+b
+    except TypeError:
+       return str(a)+ str(b)
 
-        str(b),float(a)
-    except (TypeError, ValueError):
-        return str(b)+a
-    try:
-        str(a), int(b)
-    except (TypeError, ValueError):
-        return str(a)+b
 
     return a+b
-
-
-
 
 
 print(add_everything_up(123.456, 'строка'))
